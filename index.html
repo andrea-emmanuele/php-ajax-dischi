@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Php Disks</title>
+    <link rel="stylesheet" href="app/assets/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <input type="text" v-model="searchedArtist" placeholder="Search by artist" @keyup="search">
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card" v-for="disk in disks">
+                    <img :src="disk.poster" :alt="disk.title">
+                </div>
+                <h1 v-if="!this.disks.length">Nessun disco trovato!</h1>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="app/assets/js/vue.js"></script>
+    <script src="app/assets/js/main.js"></script>
+</body>
+</html>

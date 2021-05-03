@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $primary-background-color;
+}
+
+main {
+  max-width: $content-width;
+  margin: 0 auto;
+}
