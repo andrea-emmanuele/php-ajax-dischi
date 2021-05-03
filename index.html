@@ -15,7 +15,9 @@
                 <div class="card" v-for="disk in disks">
                     <img :src="disk.poster" :alt="disk.title">
                 </div>
-                <h1 v-if="!this.disks.length">Nessun disco trovato!</h1>
+                <div class="error" v-if="!this.disks.length">
+                    <h1>Nessun disco trovato!</h1>
+                </div>
             </div>
         </main>
     </div>

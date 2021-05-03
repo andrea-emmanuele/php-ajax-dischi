@@ -4,4 +4,15 @@ header {
   align-items: center;
   padding-top: 1rem;
 
+  input {
+    &[type="text"] {
+      font-size: 1.1rem;
+      height: $input-height;
+      width: $input-width;
+      padding: .5rem;
+      border: none;
+      border-radius: 5rem;
+      outline: none;
+    }
+  }
 }
